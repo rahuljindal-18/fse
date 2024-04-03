@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 15%;;
+}
+
+.sidebar ul {
+    margin-top: 40%;
+    list-style-type: none;
+    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.content {
+    margin-left: 350px;
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 10%
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 5%;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #bb86fc;
+    color: #fff;
+    border: none;
+    width:20%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.employee-container{
+    width: 100%;
+}
+.employee-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-container th,
+.employee-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-container th {
+    background-color: #333;
+    color: #fff;
+}

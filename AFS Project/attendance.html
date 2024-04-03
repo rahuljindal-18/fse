@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="Mark.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Sigma</h2>
+        <ul>
+            <li><a href="attendance.html" style="color: #bb86fc;">Attendance Management</a></li>
+            <li><a href="project.html">Project Management</a></li>
+            <li><a href="employee.html">Employee Section</a></li>
+            <li><a href="login.html" style="color: red;">Sign Out</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <form class="Mark">
+            <h2>DAILY ATTENDANCE</h2>
+            
+            <div class="input-box">
+                <span class="details">Employee ID</span>
+                <input type="number" placeholder="Enter your Employee id" required />
+            </div>
+            <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" placeholder="Enter your password" />
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <span class="details">Date</span>
+                    <input type="date" required />
+                </div>
+                <div class="input-box time">
+                    <span class="details">Time</span>
+                    <input type="time" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <span class="details">Attendance Type</span>
+                <select required>
+                    <option value="" disable selected hidden>Select your Attendance Type</option>
+                    <option value="1">IN</option>
+                    <option value="2">OUT</option>
+                </select>
+            </div>
+            <div class="button">
+                <input type="button" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

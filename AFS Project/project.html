@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management System</title>
+    <link rel="stylesheet" href="projectcss.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Sigma</h2>
+        <ul>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li><a href="project.html" style="color: #bb86fc;">Project Management</a></li>
+            <li><a href="employee.html">Employee Section</a></li>
+            <li><a href="login.html" style="color: red;">Sign Out</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="flex-container">
+            <div class="Mark">
+                <h2>New Project</h2>
+                <form>
+                    <div class="input-box">
+                        <span>Project Name:</span>
+                        <input type="text" placeholder="Project Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Project Deadline:</span>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Select Employees:</span>
+                        <select multiple>
+                            <option value="emp1">Employee 1</option>
+                            <option value="emp2">Employee 2</option>
+                            <option value="emp3">Employee 3</option>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <div class="Mark">
+                <h2>Assign Tasks</h2>
+                <form>
+                    <div class="input-box">
+                        <span>Project Name:</span>
+                        <input type="text" placeholder="Project Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Employee Name:</span>
+                        <input type="text" placeholder="Employee Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Task Name:</span>
+                        <input type="text" placeholder="Task Name" required>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="Mark assigned-tasks">
+            <h2>Assigned Tasks</h2>
+            <div class="header2-body">
+                No Tasks Assigned
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
